@@ -1,0 +1,38 @@
+{
+    // Using `rust-analyzer.toml` (Recommended) or Editor specific config
+    // https://github.com/bram209/leptosfmt?tab=readme-ov-file#configure-ra
+    // "rust-analyzer.rustfmt.overrideCommand": [
+    //     "leptosfmt",
+    //     "--stdin",
+    //     "--rustfmt"
+    // ],
+
+    // rust-analyzer config for Leptos
+    // https://book.leptos.dev/getting_started/leptos_dx.html#2-editor-autocompletion-inside-component-and-server
+    // "rust-analyzer.procMacro.ignored": {
+    //     "leptos_macro": [
+    //         // optional:
+    //         // "component",
+    //         "server"
+    //     ]
+    // },
+    // "rust-analyzer.cargo.features": ["ssr"],
+
+    // rust
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "files.associations": {
+        "*.rs": "rust"
+    },
+
+    // formatting toggle
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "formattingToggle.affects": [
+        "editor.formatOnPaste",
+        "editor.formatOnSave",
+        "editor.formatOnType"
+    ]
+}

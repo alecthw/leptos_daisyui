@@ -1,0 +1,17 @@
+[build]
+accept_invalid_certs = true
+minify = "on_release"
+
+[serve]
+addresses = ["127.0.0.1"]
+
+[[hooks]]
+stage = "pre_build"
+command = "npx.cmd"
+command_arguments = [
+    "@tailwindcss/cli",
+    "-i",
+    "input.css",
+    "-o",
+    "public/tailwind.css"
+]
